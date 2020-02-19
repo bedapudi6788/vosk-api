@@ -20,7 +20,7 @@ VOSK_CORE_DIR = os.path.join(os.path.expanduser("~"), '.VOSK')
 
 MB = 1024 * 1024
 
-def download(model_name, save_to_path=None, timeout=10, redownload=True):
+def download(model_name, save_to_path=None, timeout=10, redownload=False):
     if model_name not in MODEL_LINKS:
         logging.exception(str(model_name) + ' is not supported yet.')
         return False
