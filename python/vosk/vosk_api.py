@@ -54,5 +54,5 @@ class Recognizer:
             yield current_res
 
         if include_final_result:
-            yield self.recognizer.FinalResult()
+            yield json.loads(self.recognizer.FinalResult())
         
